@@ -1,0 +1,55 @@
+{
+  "name": {
+    "message": "Multiple-environmental management",
+    "description": ""
+  },
+  "description": {
+    "message": "A multi-environment management and fast switching solution.",
+    "description": ""
+  },
+  "popTitle": {
+    "message": "Environment list",
+    "description": ""
+  },
+  "author": {
+    "message": "Kevin<505253293@163.com>",
+    "description": ""
+  },
+  "errorMessage": {
+    "message":
+      "# There was error with your response, please check the details and try again.",
+    "description": ""
+  },
+  "loading": {
+    "message": "Loading…",
+    "description": ""
+  },
+  "saved": {
+    "message": "Saved",
+    "description": ""
+  },
+  "optionsTitle": {
+    "message": "Multiple-Environment Management Extension Options",
+    "description": ""
+  },
+  "subTitle": {
+    "message": "Chrome extension options",
+    "description": ""
+  },
+  "sourceUrlLabel": {
+    "message": "Markdown format environment list document address",
+    "description": ""
+  },
+  "isUrlMessage": {
+    "message": "The input is not valid URL!",
+    "description": ""
+  },
+  "ok": {
+    "message": "OK",
+    "description": ""
+  },
+  "reset": {
+    "message": "Reset",
+    "description": ""
+  }
+}

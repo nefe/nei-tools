@@ -1,0 +1,54 @@
+{
+  "name": {
+    "message": "多环境管理",
+    "description": ""
+  },
+  "description": {
+    "message": "一个多环境管理和快速切换的解决方案。",
+    "description": ""
+  },
+  "popTitle": {
+    "message": "环境列表",
+    "description": ""
+  },
+  "author": {
+    "message": "听歌<505253293@163.com>",
+    "description": ""
+  },
+  "errorMessage": {
+    "message": "# 响应错误，请检查详细信息并重试。",
+    "description": ""
+  },
+  "loading": {
+    "message": "加载中……",
+    "description": ""
+  },
+  "saved": {
+    "message": "选项已保存",
+    "description": ""
+  },
+  "optionsTitle": {
+    "message": "多环境管理扩展程序选项",
+    "description": ""
+  },
+  "subTitle": {
+    "message": "Chrome扩展程序选项",
+    "description": ""
+  },
+  "sourceUrlLabel": {
+    "message": "Markdown 格式环境列表文档地址",
+    "description": ""
+  },
+  "isUrlMessage": {
+    "message": "输入的URL无效！",
+    "description": ""
+  },
+  "ok": {
+    "message": "保存",
+    "description": ""
+  },
+  "reset": {
+    "message": "重置",
+    "description": ""
+  }
+}

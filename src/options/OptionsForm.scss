@@ -1,0 +1,32 @@
+@import "../styles/reset.scss";
+
+body {
+  background-color: #eee;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+}
+
+.main-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 40px auto 20px;
+  padding: 32px;
+  width: 650px;
+
+  h1 {
+    color: #333333;
+    font-size: 1.5em;
+    margin: 0.7em 0;
+    text-align: center;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 0.4em;
+
+  a {
+    margin: 0 10px;
+  }
+}
