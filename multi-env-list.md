@@ -16,5 +16,5 @@
 | ---------- | ------------ | -------- | -------- |
 | Production | 1.0.0        | -        | 客户     |
 
-[环境列表维护]()
-[反馈建议]()
+[环境列表维护](https://github.com/TingGe/multi-env-switch/edit/master/multi-env-list.md)
+[反馈建议](https://github.com/TingGe/multi-env-switch/issues)
