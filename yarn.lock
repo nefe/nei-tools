@@ -29,7 +29,7 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.3.17":
+"@types/react@*", "@types/react@^16.3.18":
   version "16.3.18"
   resolved "http://registry.npm.alibaba-inc.com/@types/react/download/@types/react-16.3.18.tgz#bf195aed4d77dc86f06e4c9bb760214a3b822b8d"
   dependencies:
@@ -3657,7 +3657,7 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.4.0:
+react-dom@^16.4.1:
   version "16.4.1"
   resolved "http://registry.npm.alibaba-inc.com/react-dom/download/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
   dependencies:
@@ -3689,7 +3689,7 @@ react-slick@~0.23.1:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-react@^16.4.0:
+react@^16.4.1:
   version "16.4.1"
   resolved "http://registry.npm.alibaba-inc.com/react/download/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
@@ -4459,7 +4459,7 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.alibaba-inc.com/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^2.9.1:
+typescript@^2.9.2:
   version "2.9.2"
   resolved "http://registry.npm.alibaba-inc.com/typescript/download/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
 
@@ -4625,9 +4625,9 @@ watchpack@^1.5.0:
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
 
-webpack-cli@^3.0.3:
-  version "3.0.7"
-  resolved "http://registry.npm.alibaba-inc.com/webpack-cli/download/webpack-cli-3.0.7.tgz#d4171aa6a52f28d3a40048db3d0764e1c601c029"
+webpack-cli@^3.0.8:
+  version "3.0.8"
+  resolved "http://registry.npm.alibaba-inc.com/webpack-cli/download/webpack-cli-3.0.8.tgz#90eddcf04a4bfc31aa8c0edc4c76785bc4f1ccd9"
   dependencies:
     chalk "^2.4.1"
     cross-spawn "^6.0.5"

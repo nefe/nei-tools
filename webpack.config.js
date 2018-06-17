@@ -8,7 +8,7 @@ module.exports = {
     contentScripts: path.join(__dirname, "src/content_scripts/index.ts"),
     inject: path.join(__dirname, "src/content_scripts/inject.ts")
   },
-  devtool: "inline-source-map",
+  devtool: process.env.NODE_ENV === "production" ? false : "inline-source-map",
   output: {
     path: path.join(__dirname, "multi-env-switch/js"),
     filename: "[name].js"
@@ -23,23 +23,13 @@ module.exports = {
       {
         exclude: /node_modules/,
         test: /\.scss$/,
-        use: [
-          {
-            loader: "style-loader" // Creates style nodes from JS strings
-          },
-          {
-            loader: "css-loader" // Translates CSS into CommonJS
-          },
-          {
-            loader: "sass-loader" // Compiles Sass to CSS
-          }
-        ]
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
   performance: {
     hints: false
-  },  
+  },
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   }
