@@ -27,3 +27,15 @@ export function parseUrl(
   ].indexOf(field);
   return result[index];
 }
+
+/** 向页面注入JS */
+export function insertScript(jsPath) {
+  jsPath = jsPath || "js/inject.js";
+  const temp = document.createElement("script");
+  temp.setAttribute("type", "text/javascript");
+  temp.src = chrome.extension.getURL(jsPath);
+  temp.onload = function() {
+    this.parentNode.removeChild(this);
+  };
+  document.head.appendChild(temp);
+}

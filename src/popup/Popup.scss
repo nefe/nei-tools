@@ -1,16 +1,10 @@
 @import "../styles/reset.scss";
 
-body {
-  margin: 8px;
-}
-
 #pop {
   min-width: 800px;
   min-height: 600px;
 }
-.markdown-container {
+.pop-content {
+  margin: 8px;
   width: 782px;
-}
-footer > span, footer > a {
-  margin-right: 10px;
 }

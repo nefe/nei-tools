@@ -1,7 +1,10 @@
-import { Button, Form, Input, message } from "antd";
-import { FormComponentProps } from "antd/lib/form";
+import Button from "antd/lib/button";
+import Form, { FormComponentProps } from "antd/lib/form";
+import Input from "antd/lib/input";
+import message from "antd/lib/message";
 import * as React from "react";
-import Footer from "../layout/Footer";
+import Footer from "../layouts/Footer";
+import Header from "../layouts/Header";
 import "./OptionsForm.scss";
 
 const FormItem = Form.Item;
@@ -23,16 +26,17 @@ class OptionsForm extends React.Component<FormComponentProps, any> {
 
   render() {
     const { getFieldDecorator } = this.props.form;
+    const title = (
+      <>
+        <img src="./icon48.png" alt={chrome.i18n.getMessage("name")} />
+        <br />
+        {chrome.i18n.getMessage("subTitle")}
+      </>
+    );
     return (
       <>
         <div className="main-container">
-          <header>
-            <h1>
-              <img src="./icon48.png" alt={chrome.i18n.getMessage("name")} />
-              <br />
-              {chrome.i18n.getMessage("subTitle")}
-            </h1>
-          </header>
+          <Header title={title} />
           <Form onSubmit={this.handleSubmit}>
             <FormItem label={chrome.i18n.getMessage("sourceUrlLabel")}>
               {getFieldDecorator("source_url", {
@@ -55,9 +59,7 @@ class OptionsForm extends React.Component<FormComponentProps, any> {
             </FormItem>
           </Form>
         </div>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </>
     );
   }

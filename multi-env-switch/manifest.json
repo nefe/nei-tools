@@ -9,18 +9,20 @@
     "default_popup": "popup.html"
   },
   "options_page": "options.html",
-  "background": {
-    "scripts": ["js/eventPage.js"],
-    "persistent": false
-  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "permissions": [
-    "\u003Call_urls\u003E",
-    "activeTab"
+  "permissions": ["\u003Call_urls\u003E", "activeTab"],
+  "content_scripts": [
+    {
+      "exclude_globs": [],
+      "include_globs": ["*"],
+      "js": ["js/contentScripts.js"],
+      "matches": ["\u003Call_urls\u003E"]
+    }
   ],
+  "web_accessible_resources": ["js/inject.js"],
   "default_locale": "en"
 }

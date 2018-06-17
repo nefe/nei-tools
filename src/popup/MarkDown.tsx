@@ -1,11 +1,13 @@
 import * as marked from "marked";
 import * as React from "react";
 import { defaultSourceUrl } from "../consts";
-import { parseUrl } from "../utils/url";
+import { parseUrl } from "../utils";
 
 class Props {
   /** 当前的url */
   url = "";
+  /** 点击链接回调 */
+  handleClick? = () => {};
 }
 
 class MarkDown extends React.Component<Props, any> {
@@ -54,6 +56,7 @@ class MarkDown extends React.Component<Props, any> {
         active: true,
         selected: true
       });
+      this.props.handleClick();
     } else if (url && url.startsWith("dingtalk")) {
       chrome.tabs.create({
         url,

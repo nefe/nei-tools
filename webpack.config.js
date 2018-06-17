@@ -1,11 +1,12 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: process.env.NODE_ENV,
   entry: {
     popup: path.join(__dirname, "src/popup/index.tsx"),
     options: path.join(__dirname, "src/options/index.tsx"),
-    eventPage: path.join(__dirname, "src/eventPage.ts")
+    contentScripts: path.join(__dirname, "src/content_scripts/index.ts"),
+    inject: path.join(__dirname, "src/content_scripts/inject.ts")
   },
   devtool: "inline-source-map",
   output: {
@@ -36,6 +37,9 @@ module.exports = {
       }
     ]
   },
+  performance: {
+    hints: false
+  },  
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   }
