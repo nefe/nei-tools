@@ -14,10 +14,10 @@
 
 Demo : 
 
-![Demo](/Users/ting/github/multi-env-switch/assets/demo.png)
+![Demo](https://github.com/TingGe/multi-env-switch/raw/master/assets/demo.png)
 
 
 
 Options : 
 
-![Options](/Users/ting/github/multi-env-switch/assets/options.png)
+![Options](https://github.com/TingGe/multi-env-switch/raw/master/assets/options.png)
