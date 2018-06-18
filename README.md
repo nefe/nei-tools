@@ -6,8 +6,9 @@
 
 ## Installation
 
-1.  Go to `chrome://extensions` in Google Chrome
-2.  With the developer mode checkbox ticked, click **Load unpacked extension...** and select the `build` folder from this repo
+1. Download [multi-env-switch.crx](https://github.com/TingGe/multi-env-switch/raw/master/multi-env-switch.crx)；
+2. Go to `chrome://extensions` in Google Chrome
+3. With the developer mode checkbox ticked, click **Load unpacked extension...** and select the `build` folder from this repo
 
 
 ## Demo
