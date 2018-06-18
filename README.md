@@ -7,7 +7,7 @@
 ## Installation
 
 1.  Go to `chrome://extensions` in Google Chrome
-2.  With the developer mode checkbox ticked, click **Load unpacked extension...** and select the `multi-env-switch` folder from this repo
+2.  With the developer mode checkbox ticked, click **Load unpacked extension...** and select the `build` folder from this repo
 
 
 ## Demo

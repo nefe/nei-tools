@@ -10,7 +10,7 @@ module.exports = {
   },
   devtool: process.env.NODE_ENV === "production" ? false : "inline-source-map",
   output: {
-    path: path.join(__dirname, "multi-env-switch/js"),
+    path: path.join(__dirname, "build/js"),
     filename: "[name].js"
   },
   module: {
