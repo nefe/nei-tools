@@ -23,18 +23,18 @@
 
 ## 安装
 
-1. 下载 [multi-env-switch.crx]()；
+1. 下载 [multi-env-switch.crx](https://github.com/TingGe/multi-env-switch/raw/master/multi-env-switch.crx)；
 2. 打开 Chrome 浏览器的扩展程序管理页，地址栏输入 `chrome://extensions` 后，按 Enter 键；
-3. 切换到开发人员模式，将 [multi-env-switch.crx]() 拖动到扩展程序管理页。弹出确认窗时，点击“添加扩展程序”。
+3. 切换到开发人员模式，将 [multi-env-switch.crx](https://github.com/TingGe/multi-env-switch/raw/master/multi-env-switch.crx) 拖动到扩展程序管理页。弹出确认窗时，点击“添加扩展程序”。
 
 ## 使用
 
 首次使用时，默认选了一个示例文档。如下图：
 
-![Demo](/Users/ting/github/multi-env-switch/assets/demo.png)
+![Demo](https://github.com/TingGe/multi-env-switch/raw/master/assets/demo.png)
 
 
 
 可以右键 “M” 扩展，打开“选项”页，配置自己研发团队中一份 Markdown 格式的统一的环境列表文档地址。选项页如下：
 
-![Options](/Users/ting/github/multi-env-switch/assets/options.png)
+![Options](https://github.com/TingGe/multi-env-switch/raw/master/assets/options.png)
