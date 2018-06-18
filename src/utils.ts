@@ -28,7 +28,7 @@ export function parseUrl(
   return result[index];
 }
 
-/** 向页面注入JS */
+/** 向页面插入JS */
 export function insertScript(jsPath) {
   jsPath = jsPath || "js/inject.js";
   const temp = document.createElement("script");

@@ -1,6 +1,6 @@
 import * as marked from "marked";
 import * as React from "react";
-import { defaultSourceUrl } from "../consts";
+import { defaultMarkDownSourceUrl } from "../consts";
 import { parseUrl } from "../utils";
 
 class Props {
@@ -18,7 +18,7 @@ class MarkDown extends React.Component<Props, any> {
     content: ""
   };
   loadMarkdown = () => {
-    const url = localStorage.getItem("source_url") || defaultSourceUrl;
+    const url = localStorage.getItem("source_url") || defaultMarkDownSourceUrl;
     const myRequest = new Request(url);
     const self = this;
     const errorMessage = chrome.i18n.getMessage("errorMessage");

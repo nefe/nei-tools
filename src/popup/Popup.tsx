@@ -17,7 +17,10 @@ export default class Popup extends React.Component<Props, any> {
         <Header title={chrome.i18n.getMessage("popTitle")} />
         <div className="pop-content">
           {this.props.pageInfo}
-          <MarkDown url={this.props.tab.url} handleClick={this.props.handleClick} />
+          <MarkDown
+            url={this.props.tab.url}
+            handleClick={this.props.handleClick}
+          />
         </div>
         <Footer />
       </>

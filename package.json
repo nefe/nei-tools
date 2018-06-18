@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A multi-environment switching management solution",
   "scripts": {
-    "watch": "./node_modules/.bin/webpack -w",
+    "watch": "./node_modules/.bin/webpack -w --mode development",
     "build": "rm -rf ./multi-env-switch/js/ & ./node_modules/.bin/webpack --mode development",
     "deploy": "./node_modules/.bin/webpack --mode production"
   },

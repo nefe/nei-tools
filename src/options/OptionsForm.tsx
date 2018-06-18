@@ -1,7 +1,5 @@
-import Button from "antd/lib/button";
-import Form, { FormComponentProps } from "antd/lib/form";
-import Input from "antd/lib/input";
-import message from "antd/lib/message";
+import { Button, Form, Input, message } from "antd";
+import { FormComponentProps } from "antd/lib/form";
 import * as React from "react";
 import Footer from "../layouts/Footer";
 import Header from "../layouts/Header";
