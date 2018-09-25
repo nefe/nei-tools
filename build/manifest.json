@@ -2,11 +2,20 @@
   "manifest_version": 2,
   "name": "__MSG_name__",
   "description": "__MSG_description__",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "browser_action": {
     "default_title": "__MSG_name__",
     "default_icon": "icon16.png",
     "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+J",
+        "mac": "Command+J"
+      },
+      "description": "__MSG_openEnvList__"
+    }
   },
   "options_page": "options.html",
   "icons": {
@@ -23,6 +32,7 @@
       "matches": ["\u003Call_urls\u003E"]
     }
   ],
-  "web_accessible_resources": ["js/inject.js"],
-  "default_locale": "en"
+  "web_accessible_resources": ["js/info.js"],
+  "default_locale": "en",
+  "author": "TingGe<505253293@163.com>"
 }

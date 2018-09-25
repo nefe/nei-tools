@@ -4,14 +4,14 @@ import { insertScript } from "../utils";
 /** 监听 popup 页指令消息 */
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   try {
-    request.action === actionEnum.copy && insertScript("js/inject.js");
+    request.action === actionEnum.copy && insertScript("js/info.js");
   } catch (ex) {
     console.log("insertScript Fail:", ex.message);
     chrome.runtime.sendMessage({ type: requestEnum.type, text: "" });
   }
 });
 
-/** 监听 inject 的消息，并把 pageInfo 传给 popup */
+/** 监听 DEBUG_INFO 消息，并把 pageInfo 传给 popup */
 window.addEventListener(
   "message",
   function(event) {

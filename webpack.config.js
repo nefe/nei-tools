@@ -6,7 +6,7 @@ module.exports = {
     popup: path.join(__dirname, "src/popup/index.tsx"),
     options: path.join(__dirname, "src/options/index.tsx"),
     contentScripts: path.join(__dirname, "src/content_scripts/index.ts"),
-    inject: path.join(__dirname, "src/content_scripts/inject.ts")
+    info: path.join(__dirname, "src/content_scripts/info.ts")
   },
   devtool: process.env.NODE_ENV === "production" ? false : "inline-source-map",
   output: {

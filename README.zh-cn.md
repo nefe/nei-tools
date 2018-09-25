@@ -1,8 +1,8 @@
-# 多环境管理 Chrome 扩展
+# 多环境管理 Chrome 扩展（multi-env-switch）
 
-> 一个多环境管理和快速切换的解决方案。
+> 俗称 “大M”。一个多环境管理和快速切换的 Chrome 扩展。
 
-![](https://github.com/TingGe/multi-env-switch/raw/618796eb6ef60d9640c1fa60c0b0a9afe2e85d13/multi-env-switch/icon48.png)
+![](https://github.com/TingGe/multi-environment-manager/raw/618796eb6ef60d9640c1fa60c0b0a9afe2e85d13/multi-environment-manager/icon48.png)
 
 ## 解决的问题
 
@@ -23,18 +23,47 @@
 
 ## 安装
 
-1. 下载 [multi-env-switch.crx](https://github.com/TingGe/multi-env-switch/raw/master/multi-env-switch.crx)；
-2. 打开 Chrome 浏览器的扩展程序管理页，地址栏输入 `chrome://extensions` 后，按 Enter 键；
-3. 切换到开发人员模式，将 [multi-env-switch.crx](https://github.com/TingGe/multi-env-switch/raw/master/multi-env-switch.crx) 拖动到扩展程序管理页。弹出确认窗时，点击“添加扩展程序”。
+1. 直接访问 [Chrome Web Store](https://chrome.google.com/webstore/detail/multiple-environmental-ma/ehboglklfbenahbjndhnpkicglekincp) 安装；也可以在 Chrome 商店搜索 multi-environment-manager 安装；
+
+2. 安装成功后，右击 “M” 图标，在选项页中设置自己团队的环境列表文档地址即可。
+
+   当前版本仅支持 Markdown 格式。
+
+   该扩展默认的 Demo 地址是
+
+   `https://raw.githubusercontent.com/TingGe/multi-environment-manager/master/multi-env-list.md`。 
 
 ## 使用
 
 首次使用时，默认选了一个示例文档。如下图：
 
-![Demo](https://github.com/TingGe/multi-env-switch/raw/master/assets/demo.png)
+![Demo](https://github.com/TingGe/multi-environment-manager/raw/master/assets/demo.png)
 
 
 
 可以右键 “M” 扩展，打开“选项”页，配置自己研发团队中一份 Markdown 格式的统一的环境列表文档地址。选项页如下：
 
-![Options](https://github.com/TingGe/multi-env-switch/raw/master/assets/options.png)
+![Options](https://github.com/TingGe/multi-environment-manager/raw/master/assets/options.png)
+
+
+
+## 开发
+
+1. 全局安装 [npm](https://nodejs.org/) 和 [yarn](https://yarnpkg.com/en/docs/install)；
+
+2. 下载 `multi-environment-manager` 项目；
+
+   ```bash
+   git clone https://github.com/TingGe/multi-environment-manager.git
+   ```
+
+3. 在命令行工具（如  iTerm2） 中，切换到 `multi-environment-manager` 目录，执行 build 或 watch 即可构建出最新版本的"M"；
+
+   ```bash
+   cd multi-environment-manager
+   yarn
+   yarn build 
+   # 或 yarn watch
+   ```
+
+4. 打开 Chrome 浏览器，在地址栏输入 `chrome://extensions` ，按 Enter 键；开启开发人员模式，点击"加载已解压目录"选择 `multi-environment-manager/build` 。

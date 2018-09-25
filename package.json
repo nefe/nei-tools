@@ -1,11 +1,13 @@
 {
-  "name": "multi-env-switch",
-  "version": "1.0.0",
+  "name": "multi-environment-manager",
+  "version": "1.0.4",
   "description": "A multi-environment switching management solution",
   "scripts": {
     "watch": "./node_modules/.bin/webpack -w --mode development",
-    "build": "rm -rf ./multi-env-switch/js/ & ./node_modules/.bin/webpack --mode development",
-    "deploy": "./node_modules/.bin/webpack --mode production"
+    "build": "rm -rf ./multi-environment-manager/js/ && ./node_modules/.bin/webpack --mode development",
+    "build:prod": "./node_modules/.bin/webpack --mode production",
+    "zip": "zip -q -r -o ./multi-environment-manager.zip ./build/*",
+    "deploy": "yarn build:prod && yarn zip"
   },
   "author": "TingGe<505253293@163.com>",
   "license": "MIT",

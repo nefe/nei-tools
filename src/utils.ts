@@ -30,7 +30,7 @@ export function parseUrl(
 
 /** 向页面插入JS */
 export function insertScript(jsPath) {
-  jsPath = jsPath || "js/inject.js";
+  jsPath = jsPath || "js/info.js";
   const temp = document.createElement("script");
   temp.setAttribute("type", "text/javascript");
   temp.src = chrome.extension.getURL(jsPath);

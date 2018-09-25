@@ -1,6 +1,7 @@
 import { Button, Form, Input, message } from "antd";
 import { FormComponentProps } from "antd/lib/form";
 import * as React from "react";
+import { defaultMarkDownSourceUrl } from "../consts";
 import Footer from "../layouts/Footer";
 import Header from "../layouts/Header";
 import "./OptionsForm.scss";
@@ -45,15 +46,18 @@ class OptionsForm extends React.Component<FormComponentProps, any> {
                     message: chrome.i18n.getMessage("isUrlMessage")
                   }
                 ]
-              })(<Input />)}
+              })(<Input placeholder={defaultMarkDownSourceUrl} />)}
             </FormItem>
-            <FormItem>
+            <FormItem className="button-container">
               <Button type="primary" htmlType="submit">
                 {chrome.i18n.getMessage("ok")}
               </Button>
-              <Button style={{ marginLeft: 8 }} onClick={this.handleReset}>
+              <Button onClick={this.handleReset}>
                 {chrome.i18n.getMessage("reset")}
               </Button>
+              <a href="/popup.html">
+                {chrome.i18n.getMessage("openEnvList")}
+              </a>
             </FormItem>
           </Form>
         </div>

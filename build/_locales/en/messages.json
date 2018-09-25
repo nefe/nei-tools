@@ -1,7 +1,7 @@
 {
   "name": {
-    "message": "Multiple-environmental management",
-    "description": ""
+    "message": "Multi-Environment Manager",
+    "description": "Multiple-environmental management"
   },
   "description": {
     "message": "A multi-environment management and fast switching solution.",
@@ -9,6 +9,10 @@
   },
   "popTitle": {
     "message": "Environment list",
+    "description": ""
+  },
+  "openEnvList": {
+    "message": "Open then environment list",
     "description": ""
   },
   "author": {

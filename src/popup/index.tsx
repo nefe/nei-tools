@@ -11,17 +11,8 @@ function sendCopy(tab) {
   chrome.tabs.sendMessage(tab.id, { action: actionEnum.copy });
 }
 
-let tab = null;
-
-// 当前打开的选项卡
-chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-  tab = tabs.find(item => item.active) || tabs[0];
-  sendCopy(tab);
-});
-
-/** 监听 contentScripts 页消息 */
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  const pageInfo = request.type === requestEnum.type ? request.text : "";
+// 渲染 Popup 内容
+function renderPopup(tab, pageInfo = null) {
   return (
     tab &&
     ReactDOM.render(
@@ -33,4 +24,19 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       document.getElementById("popup")
     )
   );
+}
+
+let tab = null;
+
+// 当前打开的选项卡
+chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
+  tab = tabs.find(item => item.active) || tabs[0];
+  sendCopy(tab);
+  renderPopup(tab);
+});
+
+/** 监听 contentScripts 页消息 */
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  const pageInfo = request.type === requestEnum.type ? request.text : "";
+  renderPopup(tab, pageInfo);
 });
